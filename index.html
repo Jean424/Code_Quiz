@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <title>Code quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="whiteText">Quik Quiz</h1>
+      <button id="Start" class="darkViolet">Start Quiz</button>
+    </header>
+    <main>
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 class="question">Question:</h2>
+          <ul>
+            <li>
+              <input  type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Option1</label>
+            </li>
+            <li>
+              <input  type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Option2</label>
+            </li>
+            <li>
+              <input  type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Option3</label>
+            </li>
+          </ul>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+      <div class="myFooter">
+        <div class="myTimer">
+          <h3>Time Left</h3>
+        </div>
+        <div class="timer">
+          <p><span id="timePara"> 60 </span>&nbsp; seconds left!</p>
+        </div>
+        <div class="scoreBox">
+          <div>
+            <input type="text" id="myInput" placeholder="Enter Initail here"></input>
+            <button onclick="storeData()" class="saveBtn col-md-1">Save Socre</button>
+          </div>
+        </div>
+      </div>
+      <div id="finalBox">
+        <h3 id="myInitiall">Initiall Name</h3>
+        <h4 id="finalScore">Your Score</h4>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

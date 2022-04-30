@@ -1,0 +1,103 @@
+header {
+  background: rgb(202, 202, 211);
+  color: black;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+main {
+  display: flex;
+}
+.darkViolet {
+  padding: 10px;
+  margin-top: 2px;
+  background: rgb(144, 108, 144);
+  color: white;
+}
+.quiz-container {
+  background-color: rgb(163, 163, 179);
+  text-align: center;
+  margin: 25px;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+  width: 70%;
+  color: blue;
+  padding: 30px;
+  font-size: x-large;
+}
+ul li {
+  list-style-type: none;
+  margin: 60px;
+}
+aside {
+  background: #281b4c58;
+  width: 20%;
+  display: flex;
+  height: 30vh;
+  padding: 10px;
+  margin: 25px;
+  text-align: left;
+  align-items: left;
+}
+#anwer,
+#li,
+#question {
+  color: blue;
+  justify-content: space-between;
+}
+
+#submit {
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  background: rgb(32, 122, 103);
+  color: white;
+  align-items: flex-end;
+}
+aside #timePara {
+  justify-content: center;
+  align-items: center;
+}
+span,
+p {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+h3 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+.myTimer {
+  display: flex;
+  justify-content: center;
+  font-style: oblique;
+}
+
+.myFooter {
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+  background: lightcoral;
+  justify-content: space-around;
+  justify-items: center;
+}
+.timer {
+  padding: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+.scoreBox {
+  margin-top: 20px;
+  display: none;
+}
+#finalBox {
+  display: none;
+  background: rgb(53, 173, 101);
+  height: 200px;
+  margin: 20px;
+}
