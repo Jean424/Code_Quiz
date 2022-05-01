@@ -1,24 +1,31 @@
 header {
-  background: rgb(202, 202, 211);
+  background: rgb(97, 97, 135);
   color: black;
   text-align: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
+  font-size: 35px;
 }
 main {
   display: flex;
+}
+
+.whiteText {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .darkViolet {
   padding: 10px;
   margin-top: 2px;
   background: rgb(144, 108, 144);
   color: white;
+  font-size: 25px;
 }
 .quiz-container {
   background-color: rgb(163, 163, 179);
   text-align: center;
   margin: 25px;
-  height: 500px;
+  height: 400px;
   justify-content: center;
   display: flex;
   width: 70%;
@@ -28,7 +35,7 @@ main {
 }
 ul li {
   list-style-type: none;
-  margin: 60px;
+  margin: 40px;
 }
 aside {
   background: #281b4c58;
@@ -48,12 +55,13 @@ aside {
 }
 
 #submit {
-  padding: 20px;
+  padding: 15px;
   font-family: "Times New Roman", Times, serif;
   font-size: x-large;
   background: rgb(32, 122, 103);
   color: white;
   align-items: flex-end;
+  margin-left: 00px;
 }
 aside #timePara {
   justify-content: center;
@@ -66,8 +74,9 @@ p {
   display: flex;
   align-items: center;
 }
-h3 {
-  margin-top: 40px;
+h3, h4 {
+  color: white;
+  margin-top: 30px;
   display: flex;
   justify-content: left;
 }
@@ -78,26 +87,48 @@ h3 {
   font-style: oblique;
 }
 
-.myFooter {
-  width: 20%;
-  height: 200px;
+ .aside {
+  width: 25%;
+  height: 120px;
   margin: 20px;
-  background: lightcoral;
+  background: rgb(119, 99, 119);
   justify-content: space-around;
   justify-items: center;
-}
+} 
+
 .timer {
-  padding: 2rem;
   font-weight: bold;
-  color: aliceblue;
+  color: white;
 }
+
+#restart {
+  margin-top: 15px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  background: rgb(32, 122, 103);
+  color: white;
+  align-items: flex-end;
+  margin-left: 90px;
+}
+
 .scoreBox {
-  margin-top: 20px;
+  margin-top: 40px;
   display: none;
 }
+
+.saveBtn {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: gray;
+  color:purple;
+}
+
 #finalBox {
+  bottom: 15px;
   display: none;
-  background: rgb(53, 173, 101);
-  height: 200px;
+  background: rgb(83, 62, 91);
+  height: auto;
+  width: auto;
   margin: 20px;
 }

@@ -1,3 +1,17 @@
+let quiz = document.getElementById("quiz");
+let answerEls = document.querySelectorAll(".answer");
+let questionEl = document.querySelector(".question");
+let a_text = document.getElementById("a_text");
+let b_text = document.getElementById("b_text");
+let c_text = document.getElementById("c_text");
+let submitBtn = document.getElementById("submit");
+var startBtn = document.getElementById("Start");
+var timePara = document.querySelector("#timePara");
+var myScoreBox = document.querySelector(".scoreBox");
+var myFinalBox = document.querySelector("#finalBox");
+
+let restartBtn = document.getElementById("restart");
+
 var questionArray = [
   {
     questionTitle: "What is JavaScript",
@@ -29,17 +43,6 @@ var questionArray = [
   },
 ];
 
-let quiz = document.getElementById("quiz");
-let answerEls = document.querySelectorAll(".answer");
-let questionEl = document.querySelector(".question");
-let a_text = document.getElementById("a_text");
-let b_text = document.getElementById("b_text");
-let c_text = document.getElementById("c_text");
-let submitBtn = document.getElementById("submit");
-var startBtn = document.getElementById("Start");
-var timePara = document.querySelector("#timePara");
-var myScoreBox = document.querySelector(".scoreBox");
-var myFinalBox = document.querySelector("#finalBox");
 var isPlaying = false;
 
 let currentQuiz = 0;
@@ -124,22 +127,25 @@ submitBtn.addEventListener("click", () => {
 });
 
 function gameOver() {
-  quiz.innerHTML = `
-  <h2> You answered ${score}/${questionArray.length} question correctly </h2>
-  <button onclick="location.reload()"> Restart Quiz</button>
-  `;
+   quiz.innerHTML = `
+   <h2> You answered ${score}/${questionArray.length} questions correctly. You got ${score} out of 100.</h2>`;
+  
   clearInterval(timer);
   myScoreBox.style.display = "block";
 
   myFinalBox.style.display = "block";
 }
 
+restartBtn.addEventListener("click", () => {
+  location.reload();
+});
+
 function storeData() {
   //build array
   //display  on the page
   //grabbing array from the local  storage
   var myScore = JSON.parse(localStorage.getItem("highScore")) || [];
-  
+  localStorage.removeItem(myScore)
   var takeInit = document.querySelector("#myInput").value;
   console.log(myScore);
   var currentScore = `Initials: ${takeInit}, Score: ${score}`;
